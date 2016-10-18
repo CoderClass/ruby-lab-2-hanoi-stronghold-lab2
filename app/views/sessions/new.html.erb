@@ -1,0 +1,5 @@
+<%= form_tag login_path do  %>
+  <%= text_field 'email', params[:email], class: 'form-control', placeholder: 'Your E-mail' %>
+    <%= password_field 'password', class: 'form-control', placeholder: 'Password' %>
+  <%= submit_tag 'Sign In', class: 'btn btn-block btn-info' %>
+<% end %>
